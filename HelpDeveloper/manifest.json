@@ -1,0 +1,45 @@
+{
+  "name": "HelpDeveloper",
+  "version": "1.0.0.1017",
+  "manifest_version": 2,
+  "description": "Your develop's helper",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "lib/jquery.min.js",
+        "define/define.js",
+        "src/page_action/page_action.jenkins.js",
+        "src/page_action/page_action.admin.js",
+        "src/page_action/page_action.redmine.js",
+        "src/page_action/page_action.emLauncher.js",
+        "content.js"
+      ],
+      "css": [
+        "css/ner-return-button.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "image/icon16.png",
+      "24": "image/icon24.png",
+      "32": "image/icon32.png",
+      "48": "image/icon48.png",
+      "128": "image/icon128.png",
+      "256": "image/icon256.png"
+    },
+    "default_title": "HelpDeveloper",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "file:///*/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

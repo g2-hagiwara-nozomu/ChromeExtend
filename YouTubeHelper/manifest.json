@@ -1,0 +1,36 @@
+{
+  "name": "YouTubeHelper",
+  "version": "0.0.1.1006",
+  "manifest_version": 3,
+  "description": "YouTube videos helper",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/feed/subscriptions"
+      ],
+      "js": [
+        "lib/jquery.min.js",
+        "content.js"
+      ],
+      "css":[
+        "css/main.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "image/icon16.png",
+      "24": "image/icon24.png",
+      "32": "image/icon32.png",
+      "48": "image/icon48.png",
+      "128": "image/icon128.png",
+      "256": "image/icon256.png"
+    },
+    "default_title": "YouTubeHelper"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}

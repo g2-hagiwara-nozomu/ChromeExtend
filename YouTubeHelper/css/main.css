@@ -1,0 +1,22 @@
+#ner-extend {
+  position : absolute;
+}
+
+#ner-help-button {
+  width : 80px;
+  border : none;
+  background : #f83f81;
+  color : #111;
+  cursor : pointer;
+  border-radius : 100vh;
+  transition : 0.5s;
+  z-index : 10000;
+  font-weight : 500;
+  padding : 5px 0px 5px 0px;
+  top : -1px;
+  position : relative;
+}
+
+.ner-new-video {
+  background : #3f1a27;
+}
