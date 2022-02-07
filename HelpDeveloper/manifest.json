@@ -1,6 +1,6 @@
 {
   "name": "HelpDeveloper",
-  "version": "1.0.0.1017",
+  "version": "1.0.1.1018",
   "manifest_version": 2,
   "description": "Your develop's helper",
   "content_scripts": [

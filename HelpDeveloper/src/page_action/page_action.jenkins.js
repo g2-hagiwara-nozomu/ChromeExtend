@@ -66,6 +66,9 @@ class PageAction_Jenkins {
     // 表示を整える
     message = message.replace("build_target=", "");
     message = message.replace("?delay=0sec", "");
+    if (message.startsWith("login")) {
+      message = message.substring(0, 5);
+    }
 
     // URLを整える
     if (targetUrl.endsWith("job/")) {
