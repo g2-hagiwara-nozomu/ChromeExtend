@@ -1,84 +1,83 @@
 .ner-return-button {
-  position: fixed;
-  top: 15px;
-  border: none;
-  background: #111;
-  color: #fff;
-  width: 200px;
-  padding: 5px 0px 5px 0px;
-  margin: 0 0px 0 20px;
-  border-radius: 100vh;
-  transition: 0.5s;
-  box-shadow: 15px 10px 15px -10px gray;
-  z-index: 1000;
+  position : fixed;
+  top : 15px;
+  border : none;
+  background : #111;
+  color : #fff;
+  width : 200px;
+  padding : 5px 0px 5px 0px;
+  margin : 0 0px 0 20px;
+  border-radius : 100vh;
+  transition : 0.5s;
+  box-shadow : 15px 10px 15px -10px gray;
+  z-index : 1000;
 }
 
 .ner-return-button:after {
-  position: absolute;
-  content: ">";
-  text-align: center;
-  line-height: 200%;
-  color: #111;
-
-  width: 30px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 100vh;
-  background-color: #8f8981;
-  transition: 0.5s;
-  z-index: 1000;
+  position : absolute;
+  content : ">";
+  text-align : center;
+  line-height : 200%;
+  color : #111;
+  width : 30px;
+  height : 100%;
+  left : 0;
+  top : 0;
+  border-radius : 100vh;
+  background-color : #8f8981;
+  transition : 0.5s;
+  z-index : 1000;
 }
 
 .ner-return-button:before {
-  position: absolute;
-  content: "";
-
-  width: 30px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 100vh;
-  opacity: 1;
-  background-color: gray;
-  transition: 0s;
-  z-index: 1000;
+  position : absolute;
+  content : "";
+  width : 30px;
+  height : 100%;
+  left : 0;
+  top : 0;
+  border-radius : 100vh;
+  opacity : 1;
+  background-color : gray;
+  transition : 0s;
+  z-index : 1000;
 }
 
 .ner-return-button:hover {
-  width: 220px;
-  margin-left: -10px;
-  background: #fff;
-  color: #111;
+  width : 220px;
+  font-weight : 900;
+  margin-left : -10px;
+  background : #fff;
+  color : #111;
 }
 
 .ner-return-button:hover:after {
-  width: 30px;
-  color: #fff;
-  transform: rotateY(-180deg);
+  width : 30px;
+  color : #fff;
+  transform : rotateY(-180deg);
 }
 
 .ner-return-button:hover:before {
-  opacity: 0;
-  width: 100%;
-  transition: 0.5s;
+  opacity : 0;
+  width : 100%;
+  transition : 0.5s;
 }
 
-.ner-return-delete-button{
-  position: fixed;
-  top: 10px;
-  border: none;
-  background: #8f8981;
-  color: #111;
-  top: 15px;
-  width: 30px;
-  padding: 5px 0px 5px 0px;
-  margin: 0 0px 0 20px;
-  border-radius: 100vh;
-  transition: 0.5s;
-  z-index: 1000;
+.ner-return-delete-button {
+  position : fixed;
+  top : 10px;
+  border : none;
+  background : #8f8981;
+  color : #111;
+  top : 15px;
+  width : 30px;
+  padding : 5px 0px 5px 0px;
+  margin : 0 0px 0 20px;
+  border-radius : 100vh;
+  transition : 0.5s;
+  z-index : 1000;
 }
 
-.ner-return-delete-button:hover{
-  transform: scale(1.1);
+.ner-return-delete-button:hover {
+  transform : scale(1.1);
 }

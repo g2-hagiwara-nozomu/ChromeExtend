@@ -1,0 +1,75 @@
+.ner-extend .ia-secondary-container {
+  margin: 0;
+}
+
+.ner-extend .plugin_pagetree .plugin_pagetree_children_list > li {
+  margin: 0;
+}
+
+.ner-extend .acs-side-bar {
+  background: #3c3f41;
+}
+
+.ner-extend .acs-side-bar.ia-scrollable-section::-webkit-scrollbar {
+  display: none;
+}
+
+.ner-extend .acs-side-bar .plugin_pagetree_children_content {
+  width: calc(100% - 20px) !important;
+}
+
+.ner-extend .acs-side-bar .label {
+  color: #bbb;
+}
+
+.ner-extend .acs-side-bar .aui-icon::before {
+  color: #bbb;
+}
+
+.ner-extend .acs-side-bar .no-children, .ner-extend .acs-side-bar .icon {
+  background-color: #bbb !important;
+}
+
+.ner-extend .acs-side-bar a {
+  color: #bbb;
+}
+
+.ner-extend .acs-side-bar a:hover {
+  text-decoration: none;
+}
+
+.ner-extend .acs-side-bar .ia-quick-links-header-title, .ner-extend .acs-side-bar .acs-nav-item-label {
+  color: #bbb;
+}
+
+.ner-extend .acs-side-bar .current-item .acs-nav-item-link {
+  background: #4f3f47 !important;
+  border-bottom: 2px solid #f83f81;
+}
+
+.ner-extend .acs-side-bar .plugin_pagetree_children_span {
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.ner-extend .acs-side-bar .plugin_pagetree_children_span:hover a {
+  overflow: visible;
+}
+
+.ner-extend .acs-side-bar .plugin_pagetree_children_span:hover:not(.plugin_pagetree_current) {
+  background-color: #9a3f60;
+}
+
+.ner-extend .acs-side-bar .plugin_pagetree_children_span:hover.plugin_pagetree_current {
+  background-color: #9a3f60;
+}
+
+.ner-extend .acs-side-bar #space-favourite-remove::before {
+  color: #f83f81;
+}
+
+.ner-extend .plugin_pagetree_current {
+  background: #4f3f47;
+  border-bottom: 2px solid #f83f81;
+}
+/*# sourceMappingURL=confluence.css.map */

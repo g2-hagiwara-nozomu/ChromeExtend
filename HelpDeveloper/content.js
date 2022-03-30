@@ -5,4 +5,5 @@ window.onload = function () {
   PageAction_Admin.OnExtend(url);
   PageAction_RedMine.OnExtend(url);
   PageAction_EmLauncher.OnExtend(url);
+  PageAction_Confluence.OnExtend(url);
 };

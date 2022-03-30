@@ -4,6 +4,7 @@ class Define {
     jenkins: "jenkins",
     redmine: "redmine",
     emLauncher: "emLauncher",
+    confluence: "confluence",
   };
 
   static getEnableKey(name) {

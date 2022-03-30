@@ -13,14 +13,17 @@
   <p>HelpDeveloper</p>
 
   <div id="app">
-    <dl v-for="data in pageData" :key="pageData.page">
-      <dt>{{ data.page }} : <button v-bind:id="data.page">{{ data.enabled }}</button>
-      </dt>
+    <dl>
+      <dt>enable_all : <button id="enable_all">Enabled</button></dt>
+      <dt>enable_admin : <button id="enable_admin">Enabled</button></dt>
+      <dt>enable_jenkins : <button id="enable_jenkins">Enabled</button></dt>
+      <dt>enable_redmine : <button id="enable_redmine">Enabled</button></dt>
+      <dt>enable_emLauncher : <button id="enable_emLauncher">Enabled</button></dt>
+      <dt>enable_confluence : <button id="enable_confluence">Enabled</button></dt>
     </dl>
   </div>
 
   <footer>
-    <script src="vue.js"></script>
     <script src="../define/define.js"></script>
     <script src="popup.js"></script>
   </footer>

@@ -4,8 +4,20 @@ class PageAction_Jenkins {
   // 有効か？
   static cachedEnabled = false;
 
+  static url_gnf = "http://10.253.64.83:8092/";
+  static url_rabbit = "http://10.253.64.80:8082/";
+  static url_current = "";
+
   static OnExtend(url) {
-    if (url.startsWith("http://10.253.64.83:8092/") === false) return;
+    // プロジェクトを判定
+    let project = "";
+    if (url.startsWith(PageAction_Jenkins.url_gnf)) {
+      project = PageAction_Jenkins.url_gnf;
+    } else if (url.startsWith(PageAction_Jenkins.url_rabbit)) {
+      project = PageAction_Jenkins.url_rabbit;
+    }
+    if (project === "") return;
+    PageAction_Jenkins.url_current = project;
 
     const key = Define.getEnableKey(Define.page.jenkins);
     chrome.storage.local.get([key], function (items) {
@@ -17,7 +29,7 @@ class PageAction_Jenkins {
   }
 
   static DoExtend(url) {
-    let jobData = url.replace("http://10.253.64.83:8092/", "");
+    let jobData = url.replace(PageAction_Jenkins.url_current, "");
 
     // トップページでも表示させる
     if (jobData == "" || jobData == "/") {
@@ -30,7 +42,7 @@ class PageAction_Jenkins {
     // 画面の半分, 全ボタンの半分、 削除ボタンの半分
     let position =
       document.body.clientWidth / 2 - (PageAction_Jenkins.width * jobDetailList.length) / 2.0 - 15;
-    let targetUrl = "http://10.253.64.83:8092/";
+    let targetUrl = PageAction_Jenkins.url_current;
 
     // 拡張のコンテナ作成
     const parent = document.createElement("div");

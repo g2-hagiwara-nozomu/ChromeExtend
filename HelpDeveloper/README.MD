@@ -1,17 +1,29 @@
+1.5.0
+AllEnable ボタン追加
+
+1.4.0
+Confluence に対応
+
+1.3.0
+Chrome extend manifest v3 に対応
+
+1.2.0
+複数 PJ の Jenkins に対応
+
 1.1.1
-Jenkinsログイン時の表示が崩れていた現象を修正
+Jenkins ログイン時の表示が崩れていた現象を修正
 
 1.1.0
 内部処理、構造の修正。最適化。
 
 1.0.x
-EmLauncherでタイトルにQRコードへのリンク追加
+EmLauncher でタイトルに QR コードへのリンク追加
 
 0.9.x
-Vue導入
+Vue 導入
 
 0.8.x
-機能のON/OFF設定追加
+機能の ON/OFF 設定追加
 
 0.7.x
 バグ修正
