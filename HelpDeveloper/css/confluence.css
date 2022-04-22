@@ -1,3 +1,29 @@
+.ner-extend #action-menu {
+  background-color: #3c3f41;
+}
+
+.ner-extend #action-menu a {
+  color: #bbb;
+}
+
+.ner-extend #action-menu:hover a:hover {
+  background-color: #9a3f60;
+}
+
+.ner-extend #space-menu-link-content {
+  background-color: #3c3f41;
+  -webkit-box-shadow: 0 0 5px 5px #111;
+          box-shadow: 0 0 5px 5px #111;
+}
+
+.ner-extend #space-menu-link-content a {
+  color: #bbb;
+}
+
+.ner-extend #space-menu-link-content:hover a:hover {
+  background-color: #9a3f60;
+}
+
 .ner-extend .ia-secondary-container {
   margin: 0;
 }

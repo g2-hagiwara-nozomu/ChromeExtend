@@ -16,12 +16,14 @@ class PageAction_Jenkins {
     } else if (url.startsWith(PageAction_Jenkins.url_rabbit)) {
       project = PageAction_Jenkins.url_rabbit;
     }
+
     if (project === "") return;
     PageAction_Jenkins.url_current = project;
 
     const key = Define.getEnableKey(Define.page.jenkins);
     chrome.storage.local.get([key], function (items) {
       let enabled = items[key];
+
       PageAction_Jenkins.cachedEnabled = enabled;
       if (enabled === false) return;
       PageAction_Jenkins.DoExtend(url);

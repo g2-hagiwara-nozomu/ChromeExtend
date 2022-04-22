@@ -1,7 +1,17 @@
 class PageAction_Admin {
+  static url_gnf = "https://gnf-dev-.*-admin.geechs-tech.com";
+  static url_rabbit = "https://api.*.dev.rabbit.geechs-tech.com/";
+
   static OnExtend(url) {
-    let regExp = new RegExp("https://gnf-dev-.*-admin.geechs-tech.com");
-    if (regExp.test(url) === false) return;
+    let type = 0;
+
+    let regExp = new RegExp(PageAction_Admin.url_gnf);
+    if (regExp.test(url)) type = 1;
+
+    regExp = new RegExp(PageAction_Admin.url_rabbit);
+    if (regExp.test(url)) type = 2;
+
+    if (type === 0) return;
 
     let urlDomain = url.match(regExp.source);
     let urlTop = url.replace(regExp.source, "");
@@ -10,11 +20,19 @@ class PageAction_Admin {
     chrome.storage.local.get([key], function (items) {
       let enable = items[key];
       if (enable === false) return;
-      PageAction_Admin.DoExtend(url);
+
+      switch (type) {
+        case 1:
+          PageAction_Admin.DoExtend_GNF(url);
+          break;
+        case 2:
+          PageAction_Admin.DoExtend_Rabbit(url);
+          break;
+      }
     });
   }
 
-  static DoExtend(url) {
+  static DoExtend_GNF(url) {
     // エラーならトップに戻す
     let isError = document.getElementById("totop") === null;
     let isLogin = url.endsWith("admin/auth/login");
@@ -44,5 +62,46 @@ class PageAction_Admin {
       location.href = topUrl;
       return;
     }
+  }
+
+  static DoExtend_Rabbit(url) {
+    let page = "none";
+    if (url.endsWith("admin/tool/sqlite/master")) {
+      page = "master";
+    }
+
+    switch (page) {
+      case "master":
+        PageAction_Admin.DoExtend_Rabbit_Master();
+        break;
+    }
+  }
+
+  static DoExtend_Rabbit_Master() {
+    const table = $("#tb1 tbody");
+
+    table.children().each(function () {
+      console.log(this);
+    });
+
+    const firstElement = table.children().get(0);
+
+    let input = document.createElement("input");
+    input.oninput = function () {
+      const inputValue = this.value;
+      table
+        .children()
+        .slice(1)
+        .each(function () {
+          console.log($(this).children().get(1).innerText);
+          let name = $(this).children().get(1).innerText;
+          if (name.includes(inputValue)) {
+            $(this).css("display", "table-row");
+          } else {
+            $(this).css("display", "none");
+          }
+        });
+    };
+    table.get(0).insertBefore(input, firstElement);
   }
 }

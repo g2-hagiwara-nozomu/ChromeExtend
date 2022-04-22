@@ -1,4 +1,31 @@
 .ner-extend {
+  // ページのメニュー
+  #action-menu {
+    background-color : #3c3f41;
+
+    a {
+      color : #bbb;
+    }
+
+    &:hover a:hover {
+      background-color : #9a3f60;
+    }
+  }
+
+  // スペースのメニュー
+  #space-menu-link-content {
+    background-color : #3c3f41;
+    box-shadow : 0 0 5px 5px #111;
+
+    a {
+      color : #bbb;
+    }
+
+    &:hover a:hover {
+      background-color : #9a3f60;
+    }
+  }
+
   .ia-secondary-container {
     margin : 0;
   }
