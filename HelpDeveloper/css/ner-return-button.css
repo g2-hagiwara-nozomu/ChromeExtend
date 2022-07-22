@@ -1,16 +1,22 @@
+:root {
+  --button-width : 230px;
+}
+
 .ner-return-button {
   position : fixed;
   top : 15px;
   border : none;
   background : #111;
   color : #fff;
-  width : 200px;
+  width : var(--button-width);
+  max-height : 25px;
   padding : 5px 0px 5px 0px;
   margin : 0 0px 0 20px;
   border-radius : 100vh;
   transition : 0.5s;
   box-shadow : 15px 10px 15px -10px gray;
   z-index : 1000;
+  overflow : hidden;
 }
 
 .ner-return-button:after {
@@ -44,7 +50,7 @@
 }
 
 .ner-return-button:hover {
-  width : 220px;
+  width : calc(var(--button-width) + 20px);
   font-weight : 900;
   margin-left : -10px;
   background : #fff;

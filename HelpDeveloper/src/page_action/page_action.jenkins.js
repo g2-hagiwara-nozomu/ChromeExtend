@@ -1,6 +1,6 @@
 class PageAction_Jenkins {
   // 間隔
-  static width = 170;
+  static width = 200;
   // 有効か？
   static cachedEnabled = false;
 
@@ -32,6 +32,7 @@ class PageAction_Jenkins {
 
   static DoExtend(url) {
     let jobData = url.replace(PageAction_Jenkins.url_current, "");
+    jobData = decodeURI(jobData);
 
     // トップページでも表示させる
     if (jobData == "" || jobData == "/") {
@@ -41,9 +42,10 @@ class PageAction_Jenkins {
     //パンくずリスト作成
     let jobDetailList = jobData.split("/");
     jobDetailList = jobDetailList.filter((name) => name != "");
+
     // 画面の半分, 全ボタンの半分、 削除ボタンの半分
     let position =
-      document.body.clientWidth / 2 - (PageAction_Jenkins.width * jobDetailList.length) / 2.0 - 15;
+      document.body.clientWidth / 2 - (PageAction_Jenkins.width * jobDetailList.length) / 2.0 - 25;
     let targetUrl = PageAction_Jenkins.url_current;
 
     // 拡張のコンテナ作成
@@ -88,6 +90,9 @@ class PageAction_Jenkins {
     if (targetUrl.endsWith("job/")) {
       targetUrl = targetUrl.replace("job/", "");
     }
+    if (targetUrl.endsWith("view/")) {
+      targetUrl = targetUrl.replace("view/", "");
+    }
 
     // ボタンの作成
     let button = document.createElement("button");
@@ -104,7 +109,7 @@ class PageAction_Jenkins {
   static OnResize() {
     if (PageAction_Jenkins.cachedEnabled === false) return;
     let buttonList = $(".ner-return-button");
-    let position = document.body.clientWidth / 2 - (155 * buttonList.length) / 2.0 - 25;
+    let position = document.body.clientWidth / 2 - (PageAction_Jenkins.width * buttonList.length) / 2.0 - 25;
 
     buttonList.each(function () {
       console.log($(this).text() + " : " + parseInt(position));

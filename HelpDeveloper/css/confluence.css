@@ -1,100 +1,194 @@
-.ner-extend #action-menu {
+.ner-extend-confluence .e4yppja0 .css-4pymtf, .ner-extend-confluence .e4yppja0 .ex6iqe20, .ner-extend-confluence .e4yppja0 .css-24msse, .ner-extend-confluence .e4yppja0 .css-2vtbmv, .ner-extend-confluence .e4yppja0 .e9adwf81, .ner-extend-confluence .e4yppja0 .css-yeujil {
   background-color: #3c3f41;
-}
-
-.ner-extend #action-menu a {
   color: #bbb;
 }
 
-.ner-extend #action-menu:hover a:hover {
+.ner-extend-confluence .e4yppja0 .css-4pymtf:hover, .ner-extend-confluence .e4yppja0 .ex6iqe20:hover, .ner-extend-confluence .e4yppja0 .css-24msse:hover, .ner-extend-confluence .e4yppja0 .css-2vtbmv:hover, .ner-extend-confluence .e4yppja0 .e9adwf81:hover, .ner-extend-confluence .e4yppja0 .css-yeujil:hover {
+  background-color: #ebecf0;
+  color: #42526e;
+}
+
+.ner-extend-confluence .e4yppja0 .css-4pymtf, .ner-extend-confluence .e4yppja0 .ex6iqe20, .ner-extend-confluence .e4yppja0 .css-24msse, .ner-extend-confluence .e4yppja0 .css-2vtbmv, .ner-extend-confluence .e4yppja0 .e9adwf81, .ner-extend-confluence .e4yppja0 .css-yeujil {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 26px;
+  min-height: 0;
+}
+
+.ner-extend-confluence .e4yppja0 .e9adwf81 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.ner-extend-confluence .e4yppja0 .ex6iqe21 {
+  top: 0;
+  height: 26px;
+  min-height: 0;
+}
+
+.ner-extend-confluence .e4yppja0 .ex6iqe21 div {
+  top: 0;
+  height: 26px;
+  min-height: 0;
+}
+
+.ner-extend-confluence .e4yppja0 .css-zaxvqe {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 42px;
+}
+
+.ner-extend-confluence .e4yppja0 nav {
+  background-color: #3c3f41;
+}
+
+.ner-extend-confluence .e4yppja0 div::-webkit-scrollbar {
+  display: none;
+}
+
+.ner-extend-confluence .e4yppja0 .e1yzw3u13 div {
+  background-color: #3c3f41;
+}
+
+.ner-extend-confluence .e4yppja0 .e1yzw3u13 h2 {
+  color: #bbb;
+}
+
+.ner-extend-confluence .e4yppja0 .css-1ncnk3i {
+  color: #bbb;
+}
+
+.ner-extend-confluence .e4yppja0 .css-1yehx9i {
+  color: #bbb;
+}
+
+.ner-extend-confluence .e4yppja0 .item .e1a4ig9z2 {
+  color: #bbb;
+}
+
+.ner-extend-confluence .e4yppja0 .item:hover .e1a4ig9z2, .ner-extend-confluence .e4yppja0 .item .item-current .e1a4ig9z2 {
+  color: #3c3f41;
+}
+
+.ner-extend-confluence .e4yppja0 .item .e1wjl5rj4 {
+  height: 20px;
+  min-height: 20px;
+}
+
+.ner-extend-confluence .e4yppja0 .item .item-current .e1a4ig9z2 {
+  color: #3c3f41;
+}
+
+.ner-extend-confluence .e4yppja0 .epgx00x1 .efxexdq0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ner-extend-confluence .e4yppja0 .epgx00x1 .css-1pwmavy {
+  color: #bbb;
+}
+
+.ner-extend-confluence .e4yppja0 .epgx00x1 .css-1pwmavy:hover {
+  color: #3c3f41;
+}
+
+.ner-extend-confluence #action-menu {
+  background-color: #3c3f41;
+}
+
+.ner-extend-confluence #action-menu a {
+  color: #bbb;
+}
+
+.ner-extend-confluence #action-menu:hover a:hover {
   background-color: #9a3f60;
 }
 
-.ner-extend #space-menu-link-content {
+.ner-extend-confluence #space-menu-link-content {
   background-color: #3c3f41;
   -webkit-box-shadow: 0 0 5px 5px #111;
           box-shadow: 0 0 5px 5px #111;
 }
 
-.ner-extend #space-menu-link-content a {
+.ner-extend-confluence #space-menu-link-content a {
   color: #bbb;
 }
 
-.ner-extend #space-menu-link-content:hover a:hover {
+.ner-extend-confluence #space-menu-link-content:hover a:hover {
   background-color: #9a3f60;
 }
 
-.ner-extend .ia-secondary-container {
+.ner-extend-confluence .ia-secondary-container {
   margin: 0;
 }
 
-.ner-extend .plugin_pagetree .plugin_pagetree_children_list > li {
+.ner-extend-confluence .plugin_pagetree .plugin_pagetree_children_list > li {
   margin: 0;
 }
 
-.ner-extend .acs-side-bar {
+.ner-extend-confluence .acs-side-bar {
   background: #3c3f41;
 }
 
-.ner-extend .acs-side-bar.ia-scrollable-section::-webkit-scrollbar {
+.ner-extend-confluence .acs-side-bar.ia-scrollable-section::-webkit-scrollbar {
   display: none;
 }
 
-.ner-extend .acs-side-bar .plugin_pagetree_children_content {
+.ner-extend-confluence .acs-side-bar .plugin_pagetree_children_content {
   width: calc(100% - 20px) !important;
 }
 
-.ner-extend .acs-side-bar .label {
+.ner-extend-confluence .acs-side-bar .label {
   color: #bbb;
 }
 
-.ner-extend .acs-side-bar .aui-icon::before {
+.ner-extend-confluence .acs-side-bar .aui-icon::before {
   color: #bbb;
 }
 
-.ner-extend .acs-side-bar .no-children, .ner-extend .acs-side-bar .icon {
+.ner-extend-confluence .acs-side-bar .no-children, .ner-extend-confluence .acs-side-bar .icon {
   background-color: #bbb !important;
 }
 
-.ner-extend .acs-side-bar a {
+.ner-extend-confluence .acs-side-bar a {
   color: #bbb;
 }
 
-.ner-extend .acs-side-bar a:hover {
+.ner-extend-confluence .acs-side-bar a:hover {
   text-decoration: none;
 }
 
-.ner-extend .acs-side-bar .ia-quick-links-header-title, .ner-extend .acs-side-bar .acs-nav-item-label {
+.ner-extend-confluence .acs-side-bar .ia-quick-links-header-title, .ner-extend-confluence .acs-side-bar .acs-nav-item-label {
   color: #bbb;
 }
 
-.ner-extend .acs-side-bar .current-item .acs-nav-item-link {
+.ner-extend-confluence .acs-side-bar .current-item .acs-nav-item-link {
   background: #4f3f47 !important;
   border-bottom: 2px solid #f83f81;
 }
 
-.ner-extend .acs-side-bar .plugin_pagetree_children_span {
+.ner-extend-confluence .acs-side-bar .plugin_pagetree_children_span {
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
-.ner-extend .acs-side-bar .plugin_pagetree_children_span:hover a {
+.ner-extend-confluence .acs-side-bar .plugin_pagetree_children_span:hover a {
   overflow: visible;
 }
 
-.ner-extend .acs-side-bar .plugin_pagetree_children_span:hover:not(.plugin_pagetree_current) {
+.ner-extend-confluence .acs-side-bar .plugin_pagetree_children_span:hover:not(.plugin_pagetree_current) {
   background-color: #9a3f60;
 }
 
-.ner-extend .acs-side-bar .plugin_pagetree_children_span:hover.plugin_pagetree_current {
+.ner-extend-confluence .acs-side-bar .plugin_pagetree_children_span:hover.plugin_pagetree_current {
   background-color: #9a3f60;
 }
 
-.ner-extend .acs-side-bar #space-favourite-remove::before {
+.ner-extend-confluence .acs-side-bar #space-favourite-remove::before {
   color: #f83f81;
 }
 
-.ner-extend .plugin_pagetree_current {
+.ner-extend-confluence .plugin_pagetree_current {
   background: #4f3f47;
   border-bottom: 2px solid #f83f81;
 }

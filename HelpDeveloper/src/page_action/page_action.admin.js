@@ -1,6 +1,7 @@
 class PageAction_Admin {
   static url_gnf = "https://gnf-dev-.*-admin.geechs-tech.com";
   static url_rabbit = "https://api.*.dev.rabbit.geechs-tech.com/";
+  static url_rabbit_lo = "https://api.*.dev-lo.rabbit.geechs-tech.com/";
 
   static OnExtend(url) {
     let type = 0;
@@ -9,6 +10,9 @@ class PageAction_Admin {
     if (regExp.test(url)) type = 1;
 
     regExp = new RegExp(PageAction_Admin.url_rabbit);
+    if (regExp.test(url)) type = 2;
+
+    regExp = new RegExp(PageAction_Admin.url_rabbit_lo);
     if (regExp.test(url)) type = 2;
 
     if (type === 0) return;
@@ -66,7 +70,7 @@ class PageAction_Admin {
 
   static DoExtend_Rabbit(url) {
     let page = "none";
-    if (url.endsWith("admin/tool/sqlite/master")) {
+    if (url.includes("admin/tool/sqlite/master")) {
       page = "master";
     }
 
@@ -75,14 +79,16 @@ class PageAction_Admin {
         PageAction_Admin.DoExtend_Rabbit_Master();
         break;
     }
+
+    if (url.includes("01")) {
+      $("#page-wrapper").css("background-color", "#ff7777");
+    } else if (url.includes("02")) {
+      $("#page-wrapper").css("background-color", "#fffde5");
+    }
   }
 
   static DoExtend_Rabbit_Master() {
     const table = $("#tb1 tbody");
-
-    table.children().each(function () {
-      console.log(this);
-    });
 
     const firstElement = table.children().get(0);
 
@@ -93,7 +99,6 @@ class PageAction_Admin {
         .children()
         .slice(1)
         .each(function () {
-          console.log($(this).children().get(1).innerText);
           let name = $(this).children().get(1).innerText;
           if (name.includes(inputValue)) {
             $(this).css("display", "table-row");

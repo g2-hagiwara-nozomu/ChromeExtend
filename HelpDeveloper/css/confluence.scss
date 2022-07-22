@@ -1,4 +1,132 @@
-.ner-extend {
+$color-white : #bbb;
+$color-black : #3c3f41;
+
+@mixin content {
+  background-color : $color-black;
+  color : $color-white;
+}
+
+.ner-extend-confluence {
+  // サイドメニュー
+  .e4yppja0 {
+    // main content
+    .css-4pymtf, .ex6iqe20, .css-24msse, .css-2vtbmv, .e9adwf81, .css-yeujil {
+      @include content;
+      &:hover {
+        background-color : #ebecf0;
+        color : #42526e;
+      }
+    }
+    .css-4pymtf, .ex6iqe20, .css-24msse, .css-2vtbmv, .e9adwf81, .css-yeujil {
+      padding-top : 0px;
+      padding-bottom : 0px;
+      height : 26px;
+      min-height : 0;
+    }
+    // アプリ
+    .e9adwf81 {
+      margin-top : 5px;
+      margin-bottom : 0;
+    }
+    // ブログ +
+    .ex6iqe21 {
+      div {
+        top : 0;
+        height : 26px;
+        min-height : 0;
+      }
+      top : 0;
+      height : 26px;
+      min-height : 0;
+    }
+
+    // title
+    .css-zaxvqe {
+      padding-top : 0;
+      padding-bottom : 0;
+      height : 42px;
+    }
+    nav {
+      background-color : $color-black;
+    }
+
+    // scroll
+    div::-webkit-scrollbar {
+      display : none;
+    }
+
+    // title
+    .e1yzw3u13 {
+      div {
+        background-color : $color-black;
+      }
+      h2 {
+        color : $color-white;
+      }
+    }
+
+    // < icon
+    .css-1ncnk3i {
+      color : $color-white;
+    }
+
+    // dot icon
+    .css-1yehx9i {
+      color : $color-white;
+    }
+
+    // item
+    .item {
+      // text
+      .e1a4ig9z2 {
+        color : $color-white;
+      }
+      &:hover, .item-current {
+        .e1a4ig9z2 {
+          color : $color-black;
+        }
+      }
+      // item
+      .e1wjl5rj4 {
+        height : 20px;
+        min-height : 20px;
+      }
+      .item-current .e1a4ig9z2 {
+        color : $color-black;
+      }
+    }
+
+    // アーカイブ済みの...
+    .epgx00x1 {
+      .efxexdq0 {
+        padding-top : 0;
+        padding-bottom : 0;
+      }
+      .css-1pwmavy {
+        color : $color-white;
+        &:hover {
+          color : $color-black;
+        }
+      }
+    }
+
+
+    // popup
+    // .e1dpxr2q0 {
+    //   background-color : $color-black;
+    // }
+  }
+
+
+
+
+
+
+
+
+
+
+  // =========旧ページ==========
   // ページのメニュー
   #action-menu {
     background-color : #3c3f41;
@@ -107,4 +235,6 @@
     background : #4f3f47;
     border-bottom : 2px solid #f83f81;
   }
+
+  // ページの順序変更
 }

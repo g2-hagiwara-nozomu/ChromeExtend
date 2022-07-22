@@ -1,6 +1,6 @@
 {
   "name": "HelpDeveloper",
-  "version": "1.6.0.1034",
+  "version": "1.6.2.1036",
   "manifest_version": 3,
   "description": "Your develop's helper",
   "content_scripts": [
@@ -23,7 +23,7 @@
         "css/ner-return-button.css",
         "css/confluence.css"
       ],
-      "run_at": "document_start"
+      "run_at": "document_idle"
     }
   ],
   "action": {
