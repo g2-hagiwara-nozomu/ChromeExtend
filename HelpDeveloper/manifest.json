@@ -1,6 +1,6 @@
 {
   "name": "HelpDeveloper",
-  "version": "1.6.2.1036",
+  "version": "1.6.2.1039",
   "manifest_version": 3,
   "description": "Your develop's helper",
   "content_scripts": [
@@ -11,6 +11,7 @@
       ],
       "js": [
         "lib/jquery.min.js",
+        "lib/commonLib.js",
         "define/define.js",
         "src/page_action/page_action.jenkins.js",
         "src/page_action/page_action.admin.js",
