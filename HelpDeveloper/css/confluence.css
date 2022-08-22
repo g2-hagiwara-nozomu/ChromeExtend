@@ -1,14 +1,46 @@
-.ner-extend-confluence .e4yppja0 .css-4pymtf, .ner-extend-confluence .e4yppja0 .ex6iqe20, .ner-extend-confluence .e4yppja0 .css-24msse, .ner-extend-confluence .e4yppja0 .css-2vtbmv, .ner-extend-confluence .e4yppja0 .e9adwf81, .ner-extend-confluence .e4yppja0 .css-yeujil {
+.screen-cover {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.screen-cover-off {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 20px;
+  z-index: 101;
+  border: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.screen-cover-off:hover {
+  opacity: 1;
+}
+
+.ner-extend-confluence .e4yppja0 ._1e0c1ule {
+  display: none;
+}
+
+.ner-extend-confluence .e4yppja0 .css-4pymtf, .ner-extend-confluence .e4yppja0 .ex6iqe20, .ner-extend-confluence .e4yppja0 .css-24msse, .ner-extend-confluence .e4yppja0 .css-2vtbmv, .ner-extend-confluence .e4yppja0 .e9adwf81, .ner-extend-confluence .e4yppja0 .css-yeujil, .ner-extend-confluence .e4yppja0 .css-gip88k, .ner-extend-confluence .e4yppja0 .exyewdw1, .ner-extend-confluence .e4yppja0 .css-4nh890 {
   background-color: #3c3f41;
   color: #bbb;
 }
 
-.ner-extend-confluence .e4yppja0 .css-4pymtf:hover, .ner-extend-confluence .e4yppja0 .ex6iqe20:hover, .ner-extend-confluence .e4yppja0 .css-24msse:hover, .ner-extend-confluence .e4yppja0 .css-2vtbmv:hover, .ner-extend-confluence .e4yppja0 .e9adwf81:hover, .ner-extend-confluence .e4yppja0 .css-yeujil:hover {
+.ner-extend-confluence .e4yppja0 .css-4pymtf:hover, .ner-extend-confluence .e4yppja0 .ex6iqe20:hover, .ner-extend-confluence .e4yppja0 .css-24msse:hover, .ner-extend-confluence .e4yppja0 .css-2vtbmv:hover, .ner-extend-confluence .e4yppja0 .e9adwf81:hover, .ner-extend-confluence .e4yppja0 .css-yeujil:hover, .ner-extend-confluence .e4yppja0 .css-gip88k:hover, .ner-extend-confluence .e4yppja0 .exyewdw1:hover, .ner-extend-confluence .e4yppja0 .css-4nh890:hover {
   background-color: #ebecf0;
   color: #42526e;
 }
 
-.ner-extend-confluence .e4yppja0 .css-4pymtf, .ner-extend-confluence .e4yppja0 .ex6iqe20, .ner-extend-confluence .e4yppja0 .css-24msse, .ner-extend-confluence .e4yppja0 .css-2vtbmv, .ner-extend-confluence .e4yppja0 .e9adwf81, .ner-extend-confluence .e4yppja0 .css-yeujil {
+.ner-extend-confluence .e4yppja0 .css-4pymtf, .ner-extend-confluence .e4yppja0 .ex6iqe20, .ner-extend-confluence .e4yppja0 .css-24msse, .ner-extend-confluence .e4yppja0 .css-2vtbmv, .ner-extend-confluence .e4yppja0 .e9adwf81, .ner-extend-confluence .e4yppja0 .css-yeujil, .ner-extend-confluence .e4yppja0 .css-gip88k, .ner-extend-confluence .e4yppja0 .exyewdw1, .ner-extend-confluence .e4yppja0 .css-4nh890 {
   padding-top: 0px;
   padding-bottom: 0px;
   height: 26px;
@@ -16,6 +48,11 @@
 }
 
 .ner-extend-confluence .e4yppja0 .e9adwf81 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.ner-extend-confluence .e4yppja0 .css-4nh890 {
   margin-top: 5px;
   margin-bottom: 0;
 }
@@ -32,10 +69,20 @@
   min-height: 0;
 }
 
-.ner-extend-confluence .e4yppja0 .css-zaxvqe {
+.ner-extend-confluence .e4yppja0 .css-6vcaw2, .ner-extend-confluence .e4yppja0 .css-6vcaw2 .css-5mekwu {
+  background-color: #3c3f41;
+  color: #bbb;
+}
+
+.ner-extend-confluence .e4yppja0 .css-6vcaw2:hover, .ner-extend-confluence .e4yppja0 .css-6vcaw2 .css-5mekwu:hover {
+  background-color: #ebecf0;
+  color: #42526e;
+}
+
+.ner-extend-confluence .e4yppja0 .css-zaxvqe, .ner-extend-confluence .e4yppja0 .css-6vcaw2 {
   padding-top: 0;
   padding-bottom: 0;
-  height: 42px;
+  height: 26px;
 }
 
 .ner-extend-confluence .e4yppja0 nav {
@@ -62,8 +109,17 @@
   color: #bbb;
 }
 
+.ner-extend-confluence .e4yppja0 .css-196lgr2 path {
+  color: #bbb;
+}
+
+.ner-extend-confluence .e4yppja0 .item .title {
+  text-overflow: clip;
+}
+
 .ner-extend-confluence .e4yppja0 .item .e1a4ig9z2 {
   color: #bbb;
+  font-size: 13px;
 }
 
 .ner-extend-confluence .e4yppja0 .item:hover .e1a4ig9z2, .ner-extend-confluence .e4yppja0 .item .item-current .e1a4ig9z2 {
@@ -79,16 +135,16 @@
   color: #3c3f41;
 }
 
-.ner-extend-confluence .e4yppja0 .epgx00x1 .efxexdq0 {
+.ner-extend-confluence .e4yppja0 .efxexdq0 {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.ner-extend-confluence .e4yppja0 .epgx00x1 .css-1pwmavy {
+.ner-extend-confluence .e4yppja0 .css-1pwmavy {
   color: #bbb;
 }
 
-.ner-extend-confluence .e4yppja0 .epgx00x1 .css-1pwmavy:hover {
+.ner-extend-confluence .e4yppja0 .css-1pwmavy:hover {
   color: #3c3f41;
 }
 

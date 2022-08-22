@@ -6,25 +6,61 @@ $color-black : #3c3f41;
   color : $color-white;
 }
 
+.screen-cover {
+  background : #000;
+  position : fixed;
+  top : 0;
+  left : 0;
+  width : 100vw;
+  height : 100vh;
+  z-index : 100;
+  opacity : 0.1;
+  pointer-events : none;
+}
+.screen-cover-off {
+  position : fixed;
+  top : 0;
+  right : 0;
+  width : 30px;
+  height : 20px;
+  z-index : 101;
+  border : 0;
+  padding : 0;
+  opacity : 0;
+  &:hover {
+    opacity : 1;
+  }
+}
+
 .ner-extend-confluence {
   // サイドメニュー
   .e4yppja0 {
+    ._1e0c1ule {
+      display : none;
+    }
+
     // main content
-    .css-4pymtf, .ex6iqe20, .css-24msse, .css-2vtbmv, .e9adwf81, .css-yeujil {
+    .css-4pymtf, .ex6iqe20, .css-24msse, .css-2vtbmv, .e9adwf81, .css-yeujil, .css-gip88k, .exyewdw1, .css-4nh890 {
       @include content;
       &:hover {
         background-color : #ebecf0;
         color : #42526e;
       }
     }
-    .css-4pymtf, .ex6iqe20, .css-24msse, .css-2vtbmv, .e9adwf81, .css-yeujil {
+    .css-4pymtf, .ex6iqe20, .css-24msse, .css-2vtbmv, .e9adwf81, .css-yeujil, .css-gip88k, .exyewdw1, .css-4nh890 {
       padding-top : 0px;
       padding-bottom : 0px;
       height : 26px;
       min-height : 0;
     }
+
     // アプリ
     .e9adwf81 {
+      margin-top : 5px;
+      margin-bottom : 0;
+    }
+    // ショートカット
+    .css-4nh890 {
       margin-top : 5px;
       margin-bottom : 0;
     }
@@ -41,10 +77,17 @@ $color-black : #3c3f41;
     }
 
     // title
-    .css-zaxvqe {
+    .css-6vcaw2, .css-6vcaw2 .css-5mekwu {
+      @include content;
+      &:hover {
+        background-color : #ebecf0;
+        color : #42526e;
+      }
+    }
+    .css-zaxvqe, .css-6vcaw2 {
       padding-top : 0;
       padding-bottom : 0;
-      height : 42px;
+      height : 26px;
     }
     nav {
       background-color : $color-black;
@@ -75,11 +118,20 @@ $color-black : #3c3f41;
       color : $color-white;
     }
 
+    // 一括アーカイブ icon
+    .css-196lgr2 path {
+      color : $color-white;
+    }
+
     // item
     .item {
       // text
+      .title {
+        text-overflow : clip;
+      }
       .e1a4ig9z2 {
         color : $color-white;
+        font-size : 13px;
       }
       &:hover, .item-current {
         .e1a4ig9z2 {
@@ -97,16 +149,14 @@ $color-black : #3c3f41;
     }
 
     // アーカイブ済みの...
-    .epgx00x1 {
-      .efxexdq0 {
-        padding-top : 0;
-        padding-bottom : 0;
-      }
-      .css-1pwmavy {
-        color : $color-white;
-        &:hover {
-          color : $color-black;
-        }
+    .efxexdq0 {
+      padding-top : 0;
+      padding-bottom : 0;
+    }
+    .css-1pwmavy {
+      color : $color-white;
+      &:hover {
+        color : $color-black;
       }
     }
 
