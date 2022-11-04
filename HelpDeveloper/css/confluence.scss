@@ -6,6 +6,18 @@ $color-black : #3c3f41;
   color : $color-white;
 }
 
+@mixin menus {
+  @include content;
+  &:hover {
+    background-color : #ebecf0;
+    color : #42526e;
+  }
+  padding-top : 0px;
+  padding-bottom : 0px;
+  height : 26px;
+  min-height : 0;
+}
+
 .screen-cover {
   background : #000;
   position : fixed;
@@ -54,6 +66,16 @@ $color-black : #3c3f41;
       min-height : 0;
     }
 
+    // スペース設定
+    .css-1jqm7el {
+      @include menus;
+    }
+
+    // draw.io
+    .css-1jqm7el {
+      @include menus;
+    }
+
     // アプリ
     .e9adwf81 {
       margin-top : 5px;
@@ -77,14 +99,14 @@ $color-black : #3c3f41;
     }
 
     // title
-    .css-6vcaw2, .css-6vcaw2 .css-5mekwu {
+    .css-6vcaw2, .css-5mekwu, .css-169nkcu {
       @include content;
       &:hover {
         background-color : #ebecf0;
         color : #42526e;
       }
     }
-    .css-zaxvqe, .css-6vcaw2 {
+    .css-zaxvqe, .css-6vcaw2m, .css-169nkcu {
       padding-top : 0;
       padding-bottom : 0;
       height : 26px;
@@ -114,7 +136,7 @@ $color-black : #3c3f41;
     }
 
     // dot icon
-    .css-1yehx9i {
+    .e1a4ig9z1 {
       color : $color-white;
     }
 
@@ -153,7 +175,7 @@ $color-black : #3c3f41;
       padding-top : 0;
       padding-bottom : 0;
     }
-    .css-1pwmavy {
+    .css-1jqm7el {
       color : $color-white;
       &:hover {
         color : $color-black;

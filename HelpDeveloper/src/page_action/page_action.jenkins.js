@@ -6,6 +6,7 @@ class PageAction_Jenkins {
 
   static url_gnf = "http://10.253.64.83:8092/";
   static url_rabbit = "http://10.253.64.80:8082/";
+  static url_daruma = "http://10.253.64.85:8093/";
   static url_current = "";
 
   static OnExtend(url) {
@@ -15,6 +16,8 @@ class PageAction_Jenkins {
       project = PageAction_Jenkins.url_gnf;
     } else if (url.startsWith(PageAction_Jenkins.url_rabbit)) {
       project = PageAction_Jenkins.url_rabbit;
+    } else if (url.startsWith(PageAction_Jenkins.url_daruma)) {
+      project = PageAction_Jenkins.url_daruma;
     }
 
     if (project === "") return;

@@ -5,7 +5,8 @@ class PageAction_Confluence {
   static OnExtend(url) {
     if (
       url.startsWith("https://confluence.geechs.com/") == false &&
-      url.startsWith("https://geechs.atlassian.net/") == false
+      url.startsWith("https://geechs.atlassian.net/") == false &&
+      url.startsWith("https://daruma-g2-studios.atlassian.net/") == false
     ) {
       return;
     }
