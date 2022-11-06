@@ -13,11 +13,12 @@
         "lib/jquery.min.js",
         "lib/commonLib.js",
         "define/define.js",
-        "src/page_action/page_action.jenkins.js",
         "src/page_action/page_action.admin.js",
-        "src/page_action/page_action.redmine.js",
-        "src/page_action/page_action.emLauncher.js",
         "src/page_action/page_action.confluence.js",
+        "src/page_action/page_action.emLauncher.js",
+        "src/page_action/page_action.jenkins.js",
+        "src/page_action/page_action.movie.js",
+        "src/page_action/page_action.redmine.js",
         "content.js"
       ],
       "css": [

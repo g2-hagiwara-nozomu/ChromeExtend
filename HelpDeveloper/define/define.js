@@ -1,10 +1,11 @@
 class Define {
   static page = {
     admin: "admin",
-    jenkins: "jenkins",
-    redmine: "redmine",
-    emLauncher: "emLauncher",
     confluence: "confluence",
+    emLauncher: "emLauncher",
+    jenkins: "jenkins",
+    moive: "movie",
+    redmine: "redmine",
   };
 
   static getEnableKey(name) {

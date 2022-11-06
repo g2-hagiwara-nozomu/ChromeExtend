@@ -6,10 +6,11 @@ const getStorage = (key) =>
 // 全ページリスト
 const pageEnableKeyArray = [
   Define.getEnableKey(Define.page.admin),
-  Define.getEnableKey(Define.page.jenkins),
-  Define.getEnableKey(Define.page.redmine),
-  Define.getEnableKey(Define.page.emLauncher),
   Define.getEnableKey(Define.page.confluence),
+  Define.getEnableKey(Define.page.emLauncher),
+  Define.getEnableKey(Define.page.jenkins),
+  Define.getEnableKey(Define.page.movie),
+  Define.getEnableKey(Define.page.redmine),
 ];
 
 async function OnChangeEnable(key) {
