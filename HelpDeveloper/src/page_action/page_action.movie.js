@@ -123,7 +123,7 @@ class PageAction_Movie {
         PageAction_Movie.setSpeed(PageAction_Movie.speed + 0.25);
         break;
       case "KeyJ":
-        PageAction_Movie.addTime(2);
+        PageAction_Movie.addTime(-2);
         break;
       case "KeyL":
         PageAction_Movie.addTime(2);
