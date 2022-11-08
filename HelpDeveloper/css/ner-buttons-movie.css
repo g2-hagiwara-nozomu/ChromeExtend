@@ -1,0 +1,46 @@
+.ner-button-movie-container
+{
+    z-index: 100000;
+    position: absolute;
+    width: 110px;
+    height: 25px;
+    top: 0;
+    left: 0;
+}
+
+.ner-button-movie-container > .ner-button-movie
+{
+  z-index: 100000;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #222;
+  background-color: #222;
+  color: #ddd;
+  font-size: 14px;
+  opacity: 0;
+}
+.ner-button-movie-container:hover > .ner-button-movie{
+  opacity: 1;
+}
+#ner-button-mis
+{
+    top: 0;
+    left: 0px;
+}
+#ner-button-spd
+{
+    width: 35px;
+    top: 0;
+    left: 25px;
+}
+#ner-button-pls
+{
+    top: 0;
+    left: 60px;
+}
+#ner-button-del
+{
+    top: 0;
+    left: 85px;
+}

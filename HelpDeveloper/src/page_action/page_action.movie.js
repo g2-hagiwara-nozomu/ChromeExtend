@@ -34,32 +34,32 @@ class PageAction_Movie {
 
   static DoExtend(url) {
     let container = document.createElement("div");
-    container.className = "ner-button-anime-container";
+    container.className = "ner-button-movie-container";
     document.body.appendChild(container);
 
     let mis = document.createElement("button");
     mis.innerHTML = "-";
     mis.id = "ner-button-mis";
-    mis.className = "ner-button-anime";
+    mis.className = "ner-button-movie";
     container.appendChild(mis);
 
     PageAction_Movie.spdContent = document.createElement("div");
     let spd = PageAction_Movie.spdContent;
     spd.innerHTML = PageAction_Movie.speed.toFixed(2);
     spd.id = "ner-button-spd";
-    spd.className = "ner-button-anime";
+    spd.className = "ner-button-movie";
     container.appendChild(spd);
 
     let pls = document.createElement("button");
     pls.innerHTML = "+";
     pls.id = "ner-button-pls";
-    pls.className = "ner-button-anime";
+    pls.className = "ner-button-movie";
     container.appendChild(pls);
 
     let del = document.createElement("button");
     del.innerHTML = "x";
     del.id = "ner-button-del";
-    del.className = "ner-button-anime";
+    del.className = "ner-button-movie";
     container.appendChild(del);
 
     mis.onclick = function () {
